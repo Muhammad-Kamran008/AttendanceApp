@@ -48,6 +48,14 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
+        adminProtalBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.wtf("-this", "Admin");
+                startActivity(new Intent(MainActivity.this, AdminLoginActivity.class));
+                finish();
+            }
+        });
 
     }
 }
