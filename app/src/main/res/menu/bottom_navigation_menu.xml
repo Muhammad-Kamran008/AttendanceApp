@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/markAttendance_Home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/mark_attendance"
+        android:title="Mark Attendance" />
+
+
+    <item
+        android:id="@+id/requestLeave_Home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/leave"
+        android:title="Request Leave" />
+
+
+    <item
+
+        android:id="@+id/viewAttendance_Home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/view_my_attendance"
+        android:title="View Attendance" />
+
+    <item
+        android:id="@+id/profile_studentHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/profile"
+        android:title="Profile"
+
+        />
+
+
+</menu>

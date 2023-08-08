@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.attendance_app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:label="Attendance App"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Attendance_App_EzilineTest">
+        <activity android:name="com.example.attendance_app.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.attendance_app.student.ui.ProfileActivity" />
+        <activity android:name="com.example.attendance_app.admin.ui.EditAttendanceActivity" />
+        <activity android:name="com.example.attendance_app.admin.ui.GenerateStudentReportActivity" />
+        <activity android:name="com.example.attendance_app.admin.ui.LeaveRequestsActivity" />
+        <activity android:name="com.example.attendance_app.admin.ui.StudentDetailsActivity" />
+        <activity android:name="com.example.attendance_app.admin.ui.ViewAllAttendanceActivity" />
+        <activity android:name="com.example.attendance_app.admin.ui.AdminHomeActivity" />
+        <activity android:name="com.example.attendance_app.admin.ui.AdminLoginActivity" />
+        <activity
+            android:name="com.example.attendance_app.student.ui.RequestLeaveActivity"
+            android:parentActivityName="com.example.attendance_app.student.ui.StudentHomeActivity" />
+        <activity
+            android:name="com.example.attendance_app.student.ui.RegistrationActivity"
+            android:parentActivityName="com.example.attendance_app.MainActivity" />
+        <activity
+            android:name="com.example.attendance_app.student.ui.LoginActivity"
+            android:parentActivityName="com.example.attendance_app.MainActivity" />
+        <activity android:name="com.example.attendance_app.student.ui.StudentHomeActivity">
+
+        </activity>
+
+        <activity
+            android:name="com.canhub.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+    </application>
+
+</manifest>
